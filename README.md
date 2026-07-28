@@ -72,7 +72,9 @@ Online_Education_System
 
 ## Installation and Setup
 
-### 1. Clone the Repository
+### live demo
+  You can view the project here:
+  https://online-eduaction-system.onrender.com/
 
 ```bash
 git clone https://github.com/manisha332/online_eduaction_system.git
