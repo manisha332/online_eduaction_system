@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+<header>
+    <h2 style="color:white;">Online Examination System</h2>
+</header>
+
+<section class="features">
+
+    <h1>Welcome {{name}}</h1>
+
+    <br>
+
+    <a href="{{ url_for('exam') }}" class="btn">
+    Start Exam
+</a>
+
+<a href="{{ url_for('logout') }}" class="btn btn2">
+    Logout
+</a>
+
+</section>
+
+</body>
+</html>                 

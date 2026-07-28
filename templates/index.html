@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Examination System</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <h2>Online Examination System</h2>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('home') }}">Home</a></li>
+                <li><a href="{{ url_for('register') }}">Register</a></li>
+                <li><a href="{{ url_for('login') }}">Student Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+
+        <div class="hero-text">
+
+            <h1>Welcome to Online Examination System</h1>
+
+            <p>
+                Take online examinations easily and securely.
+                Register yourself, log in, attempt the exam, and
+                view your results instantly.
+            </p>
+
+            <a href="{{ url_for('register') }}" class="btn">
+                Register Now
+            </a>
+
+            <a href="{{ url_for('login') }}" class="btn btn2">
+                Take Exam
+            </a>
+
+        </div>
+
+        <div class="hero-image">
+
+            <img src="{{ url_for('static', filename='images/exam.jpg') }}" alt="Exam Image">
+
+        </div>
+
+    </section>
+
+    <!-- Features -->
+
+    <section class="features">
+
+        <h2>Website Features</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>Student Registration</h3>
+                <p>Create a new student account quickly.</p>
+            </div>
+
+            <div class="card">
+                <h3>Secure Login</h3>
+                <p>Students can log in securely using email and password.</p>
+            </div>
+
+            <div class="card">
+                <h3>Online Examination</h3>
+                <p>Attend examinations from anywhere.</p>
+            </div>
+
+            <div class="card">
+                <h3>Instant Result</h3>
+                <p>View your score immediately after the exam.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+
+    <footer>
+
+        <p>
+            © 2026 Online Examination System |
+            Developed by Manisha
+        </p>
+
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exam Result</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+<header>
+    <div class="logo">
+        <h2>Online Examination System</h2>
+    </div>
+
+    <nav>
+        <ul>
+            <li><a href="{{ url_for('home') }}">Home</a></li>
+            <li><a href="{{ url_for('logout') }}">Logout</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="features">
+
+    <h2>Exam Result</h2>
+
+    <div class="card" style="max-width:600px; margin:auto; text-align:left;">
+
+        <h3>Congratulations!</h3>
+
+        <hr><br>
+
+        <p><strong>Student Name:</strong> {{ name if name else "Student" }}</p>
+
+        <p><strong>Total Questions:</strong> 5</p>
+
+        <p><strong>Correct Answers:</strong> 5</p>
+
+        <p><strong>Wrong Answers:</strong> 0</p>
+
+        <p><strong>Score:</strong> 5 / 5</p>
+
+        <p><strong>Percentage:</strong> 100%</p>
+
+        <p style="color:green; font-size:20px;">
+            <strong>Status: PASS ✅</strong>
+        </p>
+
+        <br>
+
+        <a href="{{ url_for('home') }}" class="btn">
+            Back to Home
+        </a>
+
+        <a href="{{ url_for('exam') }}" class="btn btn2">
+            Take Exam Again
+        </a>
+
+    </div>
+
+</section>
+
+<footer>
+    <p>© 2026 Online Examination System | Developed by Manisha</p>
+</footer>
+
+</body>
+</html>

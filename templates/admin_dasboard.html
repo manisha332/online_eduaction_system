@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+<header>
+    <div class="logo">
+        <h2>Online Examination System</h2>
+    </div>
+
+    <nav>
+        <ul>
+            <li><a href="{{ url_for('home') }}">Home</a></li>
+            <li><a href="{{ url_for('logout') }}">Logout</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="features">
+
+    <h2>Admin Dashboard</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>Add Questions</h3>
+            <p>Add new MCQ questions to the examination.</p>
+            <button class="btn">Add</button>
+        </div>
+
+        <div class="card">
+            <h3>View Questions</h3>
+            <p>Display all available examination questions.</p>
+            <button class="btn">View</button>
+        </div>
+
+        <div class="card">
+            <h3>Delete Questions</h3>
+            <p>Remove unwanted questions.</p>
+            <button class="btn">Delete</button>
+        </div>
+
+        <div class="card">
+            <h3>Student Records</h3>
+            <p>View all registered students.</p>
+            <button class="btn">View Students</button>
+        </div>
+
+        <div class="card">
+            <h3>Exam Results</h3>
+            <p>Check students' examination results.</p>
+            <button class="btn">View Results</button>
+        </div>
+
+    </div>
+
+</section>
+
+<footer>
+    <p>© 2026 Online Examination System | Developed by Manisha</p>
+</footer>
+
+</body>
+</html>

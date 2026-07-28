@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Examination</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+<header>
+    <div class="logo">
+        <h2>Online Examination System</h2>
+    </div>
+
+    <nav>
+        <ul>
+            <li><a href="{{ url_for('dashboard') }}">Dashboard</a></li>
+            <li><a href="{{ url_for('logout') }}">Logout</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="features">
+
+    <h2>Online Examination</h2>
+
+    <form action="{{ url_for('result') }}" method="GET" class="card" style="max-width:800px;margin:auto;">
+
+        <h3>1. What does HTML stand for?</h3>
+
+        <input type="radio" name="q1"> Hyper Text Markup Language<br>
+        <input type="radio" name="q1"> High Text Machine Language<br>
+        <input type="radio" name="q1"> Hyper Transfer Markup Language<br>
+        <input type="radio" name="q1"> Home Tool Markup Language
+
+        <br><br>
+
+        <h3>2. Which language is used for styling web pages?</h3>
+
+        <input type="radio" name="q2"> HTML<br>
+        <input type="radio" name="q2"> CSS<br>
+        <input type="radio" name="q2"> Python<br>
+        <input type="radio" name="q2"> Java
+
+        <br><br>
+
+        <h3>3. Which database are you using in this project?</h3>
+
+        <input type="radio" name="q3"> MySQL<br>
+        <input type="radio" name="q3"> Oracle<br>
+        <input type="radio" name="q3"> MongoDB<br>
+        <input type="radio" name="q3"> SQL Server
+
+        <br><br>
+
+        <h3>4. Which language is used for backend in this project?</h3>
+
+        <input type="radio" name="q4"> Java<br>
+        <input type="radio" name="q4"> Python (Flask)<br>
+        <input type="radio" name="q4"> PHP<br>
+        <input type="radio" name="q4"> C#
+
+        <br><br>
+
+        <h3>5. Flask is a ______.</h3>
+
+        <input type="radio" name="q5"> Programming Language<br>
+        <input type="radio" name="q5"> Database<br>
+        <input type="radio" name="q5"> Python Web Framework<br>
+        <input type="radio" name="q5"> Browser
+
+        <br><br>
+
+        <button type="submit" class="btn">
+            Submit Exam
+        </button>
+
+    </form>
+
+</section>
+
+<footer>
+    <p>© 2026 Online Examination System | Developed by Manisha</p>
+</footer>
+
+</body>
+</html>
