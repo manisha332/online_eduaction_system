@@ -6,7 +6,7 @@ app = Flask(__name__)
 # -----------------------------
 # MongoDB Connection
 # -----------------------------
-client = MongoClient("mongodb://localhost:27017/")
+client = MongoClient(os.getenv("MONGO_URI"))
 db = client["online_exam"]
 
 students = db["students"]
